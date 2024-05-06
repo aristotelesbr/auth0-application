@@ -1,0 +1,8 @@
+#!/bin/bash
+port=3000
+
+if [ $# -gt 0 ]; then
+  port=$1
+fi
+
+bundle exec rackup -p $port
